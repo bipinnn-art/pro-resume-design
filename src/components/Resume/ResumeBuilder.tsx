@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
-import { Button } from '@/components/UI/Button';
-import { Card } from '@/components/UI/Card';
+import { Button } from '@/components/UI';
+import { Card } from '@/components/UI';
 import PersonalInfo from './FormSections/PersonalInfo';
 import Experience from './FormSections/Experience';
 import Education from './FormSections/Education';

@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { TextInput, Button, Card, CardHeader, CardTitle, CardDescription, CardContent, Select } from '@/components/UI';
+import { TextInput, Button, Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/UI';
 import { useResumeContext } from '@/context/ResumeContext';
 
 const skillLevelOptions = [
@@ -92,17 +93,29 @@ const Skills: React.FC = () => {
                   />
                 </div>
                 
-                <Select
-                  options={skillCategoryOptions}
+                <select
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   value={skill.category || 'Technical'}
                   onChange={(e) => handleChange(skill.id, 'category', e.target.value)}
-                />
+                >
+                  {skillCategoryOptions.map(option => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
                 
-                <Select
-                  options={skillLevelOptions}
+                <select
+                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                   value={String(skill.level || 3)}
                   onChange={(e) => handleChange(skill.id, 'level', e.target.value)}
-                />
+                >
+                  {skillLevelOptions.map(option => (
+                    <option key={option.value} value={option.value}>
+                      {option.label}
+                    </option>
+                  ))}
+                </select>
               </div>
             ))}
           </>

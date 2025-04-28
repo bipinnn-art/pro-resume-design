@@ -5,5 +5,4 @@ export * from './TextArea';
 export * from './Button';
 export * from './Card';
 
-// Re-export shadcn components that might be needed
-export { Select } from '../ui/select';
+// Use native select instead of shadcn select to avoid casing conflicts
