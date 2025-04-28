@@ -1,8 +1,7 @@
-
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/UI";
-import { ArrowRight, FileText, LayoutTemplate } from "lucide-react";
+import { ArrowRight, LayoutTemplate } from "lucide-react";
 
 const Index = () => {
   return (
@@ -13,7 +12,7 @@ const Index = () => {
           {/* Left Column - Text Content */}
           <div className="space-y-6 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-resume-gray-900 dark:text-white leading-tight">
-              Craft Your Perfect Resume <span className="text-resume-blue-600 dark:text-resume-blue-400">in Minutes</span>
+              Create Your Perfect Resume — <span className="text-resume-blue-600 dark:text-resume-blue-400">Fast, Easy, and Free</span>
             </h1>
             
             <p className="text-xl text-resume-gray-600 dark:text-resume-gray-300 max-w-lg">
