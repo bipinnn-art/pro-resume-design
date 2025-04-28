@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/UI";
-import { ArrowRight, LayoutTemplate } from "lucide-react";
+import { ArrowRight, FileText, LayoutTemplate } from "lucide-react";
 
 const Index = () => {
   return (
