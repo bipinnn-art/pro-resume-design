@@ -4,5 +4,6 @@ export * from './TextInput';
 export * from './TextArea';
 export * from './Button';
 export * from './Card';
+export * from './Select';
 
 // Use native select instead of shadcn select to avoid casing conflicts
