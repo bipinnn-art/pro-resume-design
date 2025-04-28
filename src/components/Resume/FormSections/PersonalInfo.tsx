@@ -1,8 +1,6 @@
 
 import React from 'react';
-import { TextInput } from '@/components/UI/TextInput';
-import { TextArea } from '@/components/UI/TextArea';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/UI/Card';
+import { TextInput, TextArea, Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/UI';
 import { useResumeContext } from '@/context/ResumeContext';
 
 const PersonalInfo: React.FC = () => {

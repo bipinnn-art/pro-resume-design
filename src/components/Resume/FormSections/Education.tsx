@@ -1,9 +1,5 @@
-
 import React from 'react';
-import { TextInput } from '@/components/UI/TextInput';
-import { TextArea } from '@/components/UI/TextArea';
-import { Button } from '@/components/UI/Button';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/UI/Card';
+import { TextInput, TextArea, Button, Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/UI';
 import { useResumeContext } from '@/context/ResumeContext';
 
 const Education: React.FC = () => {

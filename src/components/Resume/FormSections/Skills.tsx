@@ -1,9 +1,5 @@
-
 import React from 'react';
-import { TextInput } from '@/components/UI/TextInput';
-import { Select } from '@/components/UI/Select';
-import { Button } from '@/components/UI/Button';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/UI/Card';
+import { TextInput, Button, Card, CardHeader, CardTitle, CardDescription, CardContent, Select } from '@/components/UI';
 import { useResumeContext } from '@/context/ResumeContext';
 
 const skillLevelOptions = [
