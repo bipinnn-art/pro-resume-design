@@ -14,6 +14,7 @@ export type ContactInfo = {
   github?: string;
   portfolio?: string;
   summary?: string;
+  location?: string; // Adding this field to resolve the TypeScript error
 };
 
 export type WorkExperience = {
