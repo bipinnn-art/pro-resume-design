@@ -1,8 +1,8 @@
 
 import React, { useState, useRef } from 'react';
 import { useResumeContext } from '@/context/ResumeContext';
-import { Button } from '@/components/UI/Button';
-import { Card } from '@/components/UI/Card';
+import { Button } from '@/components/UI';
+import { Card } from '@/components/UI';
 import SimpleTemplate from './Templates/SimpleTemplate';
 import ModernTemplate from './Templates/ModernTemplate';
 import ProfessionalTemplate from './Templates/ProfessionalTemplate';
