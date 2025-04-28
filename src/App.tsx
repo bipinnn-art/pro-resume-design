@@ -9,6 +9,10 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Builder from "./pages/Builder";
 import Preview from "./pages/Preview";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import React from "react";
@@ -31,6 +35,10 @@ const App = () => {
                   <Route path="/" element={<Index />} />
                   <Route path="/builder" element={<Builder />} />
                   <Route path="/preview" element={<Preview />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/privacy" element={<Privacy />} />
+                  <Route path="/terms" element={<Terms />} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </main>
