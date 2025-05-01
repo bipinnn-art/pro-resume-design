@@ -60,7 +60,7 @@ We believe every professional deserves an easy tool to present their journey to 
 
 For any inquiries, feedback, or support, feel free to reach out:
 
-- 📧 Email: (mailto:thetechtides@gmail.com)
+- 📧 Email: thetechtides@gmail.com
 - 🕘 Support Hours: Monday to Friday, 9:00 AM – 6:00 PM (+5:45 GMT)
 
 ---
