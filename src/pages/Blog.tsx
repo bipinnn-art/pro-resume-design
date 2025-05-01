@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/UI';
@@ -47,6 +46,17 @@ const Blog = () => {
       readTime: '5 min read',
       category: 'Recruiter Insights'
     }
+  ];
+
+  const blogCategories = [
+    'Resume Tips',
+    'ATS Optimization',
+    'Career Advice',
+    'Interview Prep',
+    'Job Search',
+    'Resume Formats',
+    'Cover Letters',
+    'Recruiter Insights'
   ];
 
   return (
@@ -139,7 +149,7 @@ const Blog = () => {
           <h2 className="text-2xl font-bold text-resume-gray-900 dark:text-white mb-6">Browse by Category</h2>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {['Resume Tips', 'ATS Optimization', 'Career Advice', 'Interview Prep', 'Job Search', 'Resume Formats', 'Cover Letters', 'Recruiter Insights'].map((category, i) => (
+            {blogCategories.map((category, i) => (
               <Link 
                 key={i} 
                 to={`/blog/category/${category.toLowerCase().replace(/\s+/g, '-')}`}

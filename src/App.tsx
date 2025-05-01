@@ -38,6 +38,10 @@ import ResumeTipsCategory from "./pages/BlogCategories/ResumeTipsCategory";
 import AtsOptimizationCategory from "./pages/BlogCategories/AtsOptimizationCategory";
 import ResumeFormatsCategory from "./pages/BlogCategories/ResumeFormatsCategory";
 import RecruiterInsightsCategory from "./pages/BlogCategories/RecruiterInsightsCategory";
+import CareerAdviceCategory from "./pages/BlogCategories/CareerAdviceCategory";
+import InterviewPrepCategory from "./pages/BlogCategories/InterviewPrepCategory";
+import JobSearchCategory from "./pages/BlogCategories/JobSearchCategory";
+import CoverLettersCategory from "./pages/BlogCategories/CoverLettersCategory";
 
 // Initialize the query client outside of the component
 const queryClient = new QueryClient();
@@ -83,6 +87,10 @@ const App = () => {
                   <Route path="/blog/category/ats-optimization" element={<AtsOptimizationCategory />} />
                   <Route path="/blog/category/resume-formats" element={<ResumeFormatsCategory />} />
                   <Route path="/blog/category/recruiter-insights" element={<RecruiterInsightsCategory />} />
+                  <Route path="/blog/category/career-advice" element={<CareerAdviceCategory />} />
+                  <Route path="/blog/category/interview-prep" element={<InterviewPrepCategory />} />
+                  <Route path="/blog/category/job-search" element={<JobSearchCategory />} />
+                  <Route path="/blog/category/cover-letters" element={<CoverLettersCategory />} />
                   
                   <Route path="*" element={<NotFound />} />
                 </Routes>
