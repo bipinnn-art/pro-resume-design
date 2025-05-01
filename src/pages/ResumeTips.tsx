@@ -43,7 +43,7 @@ const ResumeTips = () => {
       tips: [
         'Create a dedicated skills section to pass ATS scans.',
         'Divide skills into categories (Technical, Soft, Languages) if you have many.',
-        'Only list skills you're comfortable discussing in interviews.',
+        "Only list skills you're comfortable discussing in interviews.",
         'Include software proficiencies relevant to your industry.',
         'Adjust skills based on each job application.'
       ]
@@ -53,7 +53,7 @@ const ResumeTips = () => {
       tips: [
         'List degrees in reverse chronological order.',
         'Include institution name, location, degree, field of study, and graduation date.',
-        'Add GPA only if it's impressive (3.5+) and you're a recent graduate.',
+        'Add GPA only if it\'s impressive (3.5+) and you\'re a recent graduate.',
         'Include relevant coursework, academic honors, or projects if you have limited work experience.',
         'If you have extensive work experience, keep education brief.'
       ]
