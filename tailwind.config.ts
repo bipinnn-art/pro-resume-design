@@ -113,6 +113,8 @@ export default {
         sans: ['Inter var', 'Inter', 'system-ui', 'sans-serif'],
         serif: ['Georgia', 'serif'],
         mono: ['Roboto Mono', 'monospace'],
+        poppins: ['Poppins', 'sans-serif'],
+        lato: ['Lato', 'sans-serif'],
       },
     },
   },

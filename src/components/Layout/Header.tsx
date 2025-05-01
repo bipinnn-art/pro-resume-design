@@ -62,6 +62,12 @@ const Header = () => {
           >
             Blog
           </Link>
+          <Link 
+            to="/resources" 
+            className="text-resume-gray-700 hover:text-resume-blue-600 dark:text-resume-gray-300 dark:hover:text-resume-blue-400"
+          >
+            Resources
+          </Link>
         </nav>
         
         <div className="hidden md:flex items-center space-x-2">
@@ -69,7 +75,7 @@ const Header = () => {
             Sign In
           </Button>
           <Button variant="premium" size="sm">
-            Get Pro
+            Get Started
           </Button>
         </div>
         
@@ -147,12 +153,19 @@ const Header = () => {
             >
               Blog
             </Link>
+            <Link 
+              to="/resources" 
+              className="text-resume-gray-700 hover:text-resume-blue-600 dark:text-resume-gray-300 dark:hover:text-resume-blue-400 py-2"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Resources
+            </Link>
             <div className="flex flex-col space-y-2 pt-2 border-t">
               <Button variant="outline" onClick={() => setIsMenuOpen(false)}>
                 Sign In
               </Button>
               <Button variant="premium" onClick={() => setIsMenuOpen(false)}>
-                Get Pro
+                Get Started
               </Button>
             </div>
           </nav>

@@ -54,7 +54,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/examples" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
+                <Link to="/example-resumes" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
                   Example Resumes
                 </Link>
               </li>
@@ -70,23 +70,33 @@ const Footer = () => {
             <h3 className="font-semibold text-resume-gray-800 dark:text-resume-gray-200 mb-4">Resources</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/blog" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
+                <Link to="/resume-tips" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
                   Resume Tips
                 </Link>
               </li>
               <li>
-                <Link to="/blog/ats" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
+                <Link to="/ats-guide" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
                   ATS Guide
                 </Link>
               </li>
               <li>
-                <Link to="/blog/career-advice" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
+                <Link to="/career-advice" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
                   Career Advice
+                </Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
+                  Blog
                 </Link>
               </li>
               <li>
                 <Link to="/faq" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
                   FAQ
+                </Link>
+              </li>
+              <li>
+                <Link to="/resources" className="text-resume-gray-600 hover:text-resume-blue-600 dark:text-resume-gray-400 dark:hover:text-resume-blue-400 text-sm">
+                  Resources
                 </Link>
               </li>
             </ul>
