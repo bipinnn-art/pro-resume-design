@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/UI';
 import PageHeader from '@/components/UI/PageHeader';
-import { Check } from 'lucide-react';
+import { Check, Timer } from 'lucide-react';
 
 const Pricing = () => {
   const features = [
@@ -34,9 +34,14 @@ const Pricing = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-white">Free Resume Builder</h2>
               <div className="mt-4 flex items-center justify-center">
                 <span className="text-4xl md:text-5xl font-bold text-white">$0</span>
-                <span className="text-white text-xl ml-2">Forever Free</span>
               </div>
-              <p className="text-resume-blue-100 mt-2">No credit card required</p>
+              <div className="flex items-center justify-center mt-2">
+                <Timer className="h-5 w-5 text-resume-blue-200 mr-2" />
+                <p className="text-resume-blue-100 font-medium">
+                  <span className="bg-resume-blue-500 px-2 py-0.5 rounded text-white">Limited Time Offer</span>
+                </p>
+              </div>
+              <p className="text-resume-blue-100 mt-2">Take advantage now before prices change</p>
             </div>
             
             {/* Features */}
@@ -60,6 +65,9 @@ const Pricing = () => {
                     Get Started Now
                   </Button>
                 </Link>
+                <p className="text-sm text-resume-gray-500 dark:text-resume-gray-400 mt-2">
+                  Limited availability - Start creating your resume today
+                </p>
               </div>
             </div>
           </div>
@@ -85,8 +93,8 @@ const Pricing = () => {
           <div className="grid gap-6 max-w-3xl mx-auto">
             {[
               {
-                question: 'Is it really free to use?',
-                answer: 'Yes! ProResume is completely free to use with no hidden fees. You can create, edit, and download as many resumes as you need at no cost.'
+                question: 'How long will this free offer last?',
+                answer: 'Our free offer is available for a limited time only. We recommend taking advantage of it now to access all our powerful resume-building features before pricing changes are introduced.'
               },
               {
                 question: 'Do I need to create an account?',
