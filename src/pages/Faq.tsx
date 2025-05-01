@@ -16,7 +16,7 @@ const Faq = () => {
     },
     {
       question: 'Can I download my resume?',
-      answer: 'Absolutely! After you've completed your resume, you can download it as a PDF file. This format is industry-standard and ensures your resume looks the same on any device.'
+      answer: 'Absolutely! After you\'ve completed your resume, you can download it as a PDF file. This format is industry-standard and ensures your resume looks the same on any device.'
     },
     {
       question: 'Is this resume builder ATS-friendly?',
@@ -36,11 +36,11 @@ const Faq = () => {
     },
     {
       question: 'How do I export to PDF?',
-      answer: 'Once you've completed your resume, simply click on the "Download" or "Export" button in the preview section. Your resume will be generated as a high-quality PDF file that you can save to your device.'
+      answer: 'Once you\'ve completed your resume, simply click on the "Download" or "Export" button in the preview section. Your resume will be generated as a high-quality PDF file that you can save to your device.'
     },
     {
       question: 'Can I edit my resume later?',
-      answer: 'Yes, you can return to edit your resume at any time. If you create an account, your resume data will be saved automatically. If using the tool without an account, you'll need to complete your resume in one session.'
+      answer: 'Yes, you can return to edit your resume at any time. If you create an account, your resume data will be saved automatically. If using the tool without an account, you\'ll need to complete your resume in one session.'
     },
     {
       question: 'Can I use it on mobile?',
@@ -48,7 +48,7 @@ const Faq = () => {
     },
     {
       question: 'Will you add more templates?',
-      answer: 'Yes, we're constantly working on adding new professionally designed templates. We regularly update our template library based on current industry standards and user feedback.'
+      answer: 'Yes, we\'re constantly working on adding new professionally designed templates. We regularly update our template library based on current industry standards and user feedback.'
     },
     {
       question: 'How should I format my resume?',
@@ -149,7 +149,7 @@ const Faq = () => {
         <div className="mt-16 bg-resume-gray-50 dark:bg-resume-gray-800/50 rounded-lg p-8 text-center max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-resume-gray-900 dark:text-white mb-4">Still Have Questions?</h2>
           <p className="text-resume-gray-600 dark:text-resume-gray-300 mb-6">
-            If you couldn't find the answer you were looking for, feel free to reach out to our support team.
+            If you couldn&apos;t find the answer you were looking for, feel free to reach out to our support team.
           </p>
           <div className="flex justify-center space-x-4">
             <Link to="/contact">

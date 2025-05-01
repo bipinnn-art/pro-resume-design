@@ -68,8 +68,7 @@ const Pricing = () => {
           <div className="mt-16 bg-resume-gray-50 dark:bg-resume-gray-800/50 rounded-lg p-8 text-center">
             <h3 className="text-xl md:text-2xl font-semibold text-resume-gray-900 dark:text-white mb-4">Premium Features Coming Soon</h3>
             <p className="text-resume-gray-600 dark:text-resume-gray-300 max-w-2xl mx-auto">
-              We're working on advanced features including AI-powered content suggestions, premium templates, 
-              cover letter builder, and more. Subscribe to our newsletter to be notified when they launch.
+              {"We're working on advanced features including AI-powered content suggestions, premium templates, cover letter builder, and more. Subscribe to our newsletter to be notified when they launch."}
             </p>
             <div className="mt-6">
               <Button variant="outline" size="lg">
@@ -95,7 +94,7 @@ const Pricing = () => {
               },
               {
                 question: 'How do I download my resume?',
-                answer: 'Once you've completed your resume, simply click the "Download" button to save it as a PDF file that you can easily share with employers.'
+                answer: "Once you've completed your resume, simply click the \"Download\" button to save it as a PDF file that you can easily share with employers."
               }
             ].map((item, index) => (
               <div key={index} className="bg-white dark:bg-resume-gray-800 p-6 rounded-lg shadow-sm border border-resume-gray-200 dark:border-resume-gray-700">

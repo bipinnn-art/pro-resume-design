@@ -196,20 +196,20 @@ const ResumeTemplates = () => {
           <div className="space-y-6">
             {[
               {
-                question: 'Can I change templates after I've started building my resume?',
-                answer: 'Yes, you can switch between any of our templates at any point without losing your content. This allows you to see which design works best for your specific resume.'
+                question: "Can I change templates after I've started building my resume?",
+                answer: "Yes, you can switch between any of our templates at any point without losing your content. This allows you to see which design works best for your specific resume."
               },
               {
-                question: 'Are all templates free to use?',
-                answer: 'Yes, all of our templates are currently free to use, with no hidden fees or restrictions.'
+                question: "Are all templates free to use?",
+                answer: "Yes, all of our templates are currently free to use, with no hidden fees or restrictions."
               },
               {
-                question: 'How do I know which template is right for my industry?',
-                answer: 'We provide guidance on which templates work best for specific industries. Generally, conservative industries (finance, legal, healthcare) benefit from classic templates, while creative fields can use more distinctive designs.'
+                question: "How do I know which template is right for my industry?",
+                answer: "We provide guidance on which templates work best for specific industries. Generally, conservative industries (finance, legal, healthcare) benefit from classic templates, while creative fields can use more distinctive designs."
               },
               {
-                question: 'Can I customize the colors and fonts?',
-                answer: 'Yes, all templates offer customization options for colors, fonts, spacing, and section ordering to help you create a unique document that matches your personal brand.'
+                question: "Can I customize the colors and fonts?",
+                answer: "Yes, all templates offer customization options for colors, fonts, spacing, and section ordering to help you create a unique document that matches your personal brand."
               }
             ].map((faq, i) => (
               <div key={i} className="bg-white dark:bg-resume-gray-800 rounded-lg shadow-sm border border-resume-gray-200 dark:border-resume-gray-700 p-6">

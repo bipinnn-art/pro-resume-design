@@ -13,23 +13,23 @@ const CareerAdvice = () => {
       tips: [
         {
           title: 'Targeted Applications',
-          content: 'Focus on quality over quantity. It's better to submit 10 well-tailored applications than 50 generic ones.'
+          content: "Focus on quality over quantity. It's better to submit 10 well-tailored applications than 50 generic ones."
         },
         {
           title: 'Company Research',
-          content: 'Research each company thoroughly before applying. Understand their values, challenges, and recent achievements.'
+          content: "Research each company thoroughly before applying. Understand their values, challenges, and recent achievements."
         },
         {
           title: 'Track Your Applications',
-          content: 'Keep a spreadsheet of where you've applied, when, and any follow-up actions to stay organized.'
+          content: "Keep a spreadsheet of where you've applied, when, and any follow-up actions to stay organized."
         },
         {
           title: 'Leverage Job Boards Wisely',
-          content: 'Use industry-specific job boards in addition to general sites like LinkedIn and Indeed.'
+          content: "Use industry-specific job boards in addition to general sites like LinkedIn and Indeed."
         },
         {
           title: 'Set Up Job Alerts',
-          content: 'Create job alerts on multiple platforms to be notified of new opportunities that match your criteria.'
+          content: "Create job alerts on multiple platforms to be notified of new opportunities that match your criteria."
         }
       ]
     },
@@ -39,23 +39,23 @@ const CareerAdvice = () => {
       tips: [
         {
           title: 'Professional Profile Photo',
-          content: 'Use a high-quality headshot with a neutral background and professional attire.'
+          content: "Use a high-quality headshot with a neutral background and professional attire."
         },
         {
           title: 'Compelling Headline',
-          content: 'Go beyond just your job title. Include your specialty and the value you provide.'
+          content: "Go beyond just your job title. Include your specialty and the value you provide."
         },
         {
           title: 'Keyword-Rich Summary',
-          content: 'Include relevant industry keywords in your summary to improve visibility in recruiter searches.'
+          content: "Include relevant industry keywords in your summary to improve visibility in recruiter searches."
         },
         {
           title: 'Engagement Strategy',
-          content: 'Regularly share industry content, comment on posts, and participate in relevant groups.'
+          content: "Regularly share industry content, comment on posts, and participate in relevant groups."
         },
         {
           title: 'Recommendations',
-          content: 'Request recommendations from colleagues and managers that highlight specific skills and achievements.'
+          content: "Request recommendations from colleagues and managers that highlight specific skills and achievements."
         }
       ]
     },
@@ -65,23 +65,23 @@ const CareerAdvice = () => {
       tips: [
         {
           title: 'Research-Based Questions',
-          content: 'Prepare thoughtful questions based on your research of the company and role.'
+          content: "Prepare thoughtful questions based on your research of the company and role."
         },
         {
           title: 'STAR Method',
-          content: 'Structure your answers using the Situation, Task, Action, Result framework for behavioral questions.'
+          content: "Structure your answers using the Situation, Task, Action, Result framework for behavioral questions."
         },
         {
           title: 'Mock Interviews',
-          content: 'Practice with a friend or career coach to receive feedback on your responses and body language.'
+          content: "Practice with a friend or career coach to receive feedback on your responses and body language."
         },
         {
           title: 'Technical Preparation',
-          content: 'For technical roles, review fundamentals and practice common problems in your field.'
+          content: "For technical roles, review fundamentals and practice common problems in your field."
         },
         {
           title: 'Salary Research',
-          content: 'Research industry-standard compensation to prepare for salary negotiations.'
+          content: "Research industry-standard compensation to prepare for salary negotiations."
         }
       ]
     },
@@ -91,23 +91,23 @@ const CareerAdvice = () => {
       tips: [
         {
           title: 'Skills Analysis',
-          content: 'Identify transferable skills from your current role that apply to your target industry.'
+          content: "Identify transferable skills from your current role that apply to your target industry."
         },
         {
           title: 'Strategic Networking',
-          content: 'Connect with professionals in your target field to gain insights and potential opportunities.'
+          content: "Connect with professionals in your target field to gain insights and potential opportunities."
         },
         {
           title: 'Gap Analysis',
-          content: 'Identify skills gaps and create a plan to address them through courses, certifications, or projects.'
+          content: "Identify skills gaps and create a plan to address them through courses, certifications, or projects."
         },
         {
           title: 'Resume Repositioning',
-          content: 'Reframe your experience to highlight relevance to your new target role or industry.'
+          content: "Reframe your experience to highlight relevance to your new target role or industry."
         },
         {
           title: 'Start Small',
-          content: 'Consider volunteering, freelancing, or part-time work to build experience in your new field.'
+          content: "Consider volunteering, freelancing, or part-time work to build experience in your new field."
         }
       ]
     }

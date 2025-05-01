@@ -11,7 +11,7 @@ const ResumeTips = () => {
       title: 'Contact Information',
       tips: [
         'Include your full name, phone number, professional email, and location (city, state).',
-        'Add LinkedIn profile URL if it's up-to-date and professional.',
+        'Add LinkedIn profile URL if it\'s up-to-date and professional.',
         'Optional: portfolio website or GitHub for tech roles.',
         'Avoid personal details like age, marital status, or photo (in US/Canadian resumes).'
       ]
