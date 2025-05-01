@@ -6,8 +6,8 @@ const JobSearchCategory = () => {
   const posts = [
     {
       id: 'job-search-strategy-2025',
-      title: 'Job Search Strategy for 2025: What's Changed and What Works Now',
-      excerpt: 'The latest effective approaches to finding job opportunities in today's competitive market, from networking to AI-powered job platforms.',
+      title: "Job Search Strategy for 2025: What's Changed and What Works Now",
+      excerpt: "The latest effective approaches to finding job opportunities in today's competitive market, from networking to AI-powered job platforms.",
       image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800&h=500',
       author: 'Rebecca Johnson',
       date: 'April 8, 2025',
@@ -17,7 +17,7 @@ const JobSearchCategory = () => {
     {
       id: 'linkedin-profile-optimization',
       title: 'LinkedIn Profile Optimization: Get Noticed by Recruiters',
-      excerpt: 'How to enhance your LinkedIn profile to attract recruiters and generate job opportunities even when you're not actively looking.',
+      excerpt: "How to enhance your LinkedIn profile to attract recruiters and generate job opportunities even when you're not actively looking.",
       image: 'https://images.unsplash.com/photo-1611944212129-29977ae1398c?auto=format&fit=crop&q=80&w=800&h=500',
       author: 'Marcus Thompson',
       date: 'April 1, 2025',
