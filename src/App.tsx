@@ -27,6 +27,18 @@ import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import React from "react";
 
+// Blog Post Pages
+import JobWinningResume2025 from "./pages/BlogPosts/JobWinningResume2025";
+import AtsFriendlyResumeTips from "./pages/BlogPosts/AtsFriendlyResumeTips";
+import BestResumeFormats from "./pages/BlogPosts/BestResumeFormats";
+import WhyRecruitersRejectResumes from "./pages/BlogPosts/WhyRecruitersRejectResumes";
+
+// Blog Category Pages
+import ResumeTipsCategory from "./pages/BlogCategories/ResumeTipsCategory";
+import AtsOptimizationCategory from "./pages/BlogCategories/AtsOptimizationCategory";
+import ResumeFormatsCategory from "./pages/BlogCategories/ResumeFormatsCategory";
+import RecruiterInsightsCategory from "./pages/BlogCategories/RecruiterInsightsCategory";
+
 // Initialize the query client outside of the component
 const queryClient = new QueryClient();
 
@@ -59,6 +71,19 @@ const App = () => {
                   <Route path="/resume-templates" element={<ResumeTemplates />} />
                   <Route path="/example-resumes" element={<ExampleResumes />} />
                   <Route path="/resources" element={<Resources />} />
+                  
+                  {/* Blog Post Routes */}
+                  <Route path="/blog/job-winning-resume-2025" element={<JobWinningResume2025 />} />
+                  <Route path="/blog/ats-friendly-resume-tips" element={<AtsFriendlyResumeTips />} />
+                  <Route path="/blog/best-resume-formats" element={<BestResumeFormats />} />
+                  <Route path="/blog/why-recruiters-reject-resumes" element={<WhyRecruitersRejectResumes />} />
+                  
+                  {/* Blog Category Routes */}
+                  <Route path="/blog/category/resume-tips" element={<ResumeTipsCategory />} />
+                  <Route path="/blog/category/ats-optimization" element={<AtsOptimizationCategory />} />
+                  <Route path="/blog/category/resume-formats" element={<ResumeFormatsCategory />} />
+                  <Route path="/blog/category/recruiter-insights" element={<RecruiterInsightsCategory />} />
+                  
                   <Route path="*" element={<NotFound />} />
                 </Routes>
               </main>

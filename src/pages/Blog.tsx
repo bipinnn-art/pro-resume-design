@@ -111,7 +111,11 @@ const Blog = () => {
                 />
               </div>
               <div className="p-6">
-                <div className="text-sm font-medium text-resume-blue-600 dark:text-resume-blue-400 mb-2">{post.category}</div>
+                <div className="text-sm font-medium text-resume-blue-600 dark:text-resume-blue-400 mb-2">
+                  <Link to={`/blog/category/${post.category.toLowerCase().replace(/\s+/g, '-')}`}>
+                    {post.category}
+                  </Link>
+                </div>
                 <h3 className="text-xl font-bold text-resume-gray-900 dark:text-white mb-3">{post.title}</h3>
                 <p className="text-resume-gray-600 dark:text-resume-gray-300 mb-4">{post.excerpt}</p>
                 
