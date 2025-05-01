@@ -155,7 +155,12 @@ const ResumePreview: React.FC = () => {
             viewMode === 'mobile' ? 'w-[480px]' : 'w-full'
           }`}
         >
-          <div ref={resumeRef} className="shadow-lg mx-auto">
+          <div 
+            ref={resumeRef} 
+            className={`shadow-lg mx-auto ${
+              viewMode === 'mobile' ? 'scale-[0.6] origin-top transform' : ''
+            }`}
+          >
             {renderTemplate()}
           </div>
         </div>
