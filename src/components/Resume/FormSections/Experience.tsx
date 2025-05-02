@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { TextInput, TextArea, Button, Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/UI';
 import { useResumeContext } from '@/context/ResumeContext';
+import { WorkExperience } from '@/types/resume';
 
 const Experience: React.FC = () => {
   const { resumeData, addWorkExperience, updateWorkExperience, removeWorkExperience } = useResumeContext();
@@ -58,7 +60,7 @@ const Experience: React.FC = () => {
             <p>No work experiences added yet. Click "Add Experience" to get started.</p>
           </div>
         ) : (
-          workExperiences.map((experience, expIndex) => (
+          workExperiences.map((experience: WorkExperience) => (
             <div 
               key={experience.id} 
               className="border rounded-md p-4 space-y-4 relative"
@@ -172,7 +174,7 @@ const Experience: React.FC = () => {
                   Key Achievements / Responsibilities
                 </label>
                 
-                {experience.highlights.map((highlight, highlightIndex) => (
+                {experience.highlights.map((highlight: string, highlightIndex: number) => (
                   <div key={highlightIndex} className="flex items-start gap-2">
                     <TextInput
                       value={highlight}

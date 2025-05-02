@@ -8,7 +8,6 @@ import Education from './FormSections/Education';
 import Skills from './FormSections/Skills';
 import { useResumeContext } from '@/context/ResumeContext';
 import { toast } from 'sonner';
-import { TemplateType } from '@/types/resume';
 import { useNavigate } from 'react-router-dom';
 
 interface SectionTabProps {
@@ -63,7 +62,7 @@ const ResumeBuilder: React.FC = () => {
   const { resumeData, setTemplate } = useResumeContext();
   const navigate = useNavigate();
   
-  const handleTemplateSelect = (template: TemplateType) => {
+  const handleTemplateSelect = (template: 'simple' | 'modern' | 'professional' | 'classic-garamond') => {
     setTemplate(template);
     toast.success(`Template "${template}" selected`);
   };
@@ -202,6 +201,16 @@ const ResumeBuilder: React.FC = () => {
                     onClick={() => handleTemplateSelect('professional')}
                   >
                     Professional
+                  </button>
+                  <button
+                    className={`w-full p-2 text-left rounded text-sm ${
+                      resumeData.template === 'classic-garamond' 
+                        ? 'bg-resume-blue-100 text-resume-blue-800 dark:bg-resume-blue-900/30 dark:text-resume-blue-300'
+                        : 'hover:bg-resume-gray-100 dark:hover:bg-resume-gray-800'
+                    }`}
+                    onClick={() => handleTemplateSelect('classic-garamond')}
+                  >
+                    Classic Garamond
                   </button>
                 </div>
               )}

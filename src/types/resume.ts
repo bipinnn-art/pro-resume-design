@@ -105,9 +105,13 @@ export const ContactInfoSchema = z.object({
   github: z.string().default(''),
   website: z.string().default(''),
   summary: z.string().default(''),
+  address: z.string().default(''),
+  portfolio: z.string().default(''),
 });
 
 export type ContactInfo = z.infer<typeof ContactInfoSchema>;
+
+export type TemplateType = 'simple' | 'modern' | 'professional' | 'classic-garamond';
 
 // Resume Data Schema
 export const ResumeSchema = z.object({
@@ -148,6 +152,8 @@ export const defaultResumeData: ResumeData = {
     github: '',
     website: '',
     summary: '',
+    address: '',
+    portfolio: '',
   },
   workExperiences: [],
   educations: [],

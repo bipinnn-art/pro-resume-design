@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { TextInput, TextArea, Button, Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/UI';
 import { useResumeContext } from '@/context/ResumeContext';
+import { Education as EducationType } from '@/types/resume';
 
 const Education: React.FC = () => {
   const { resumeData, addEducation, updateEducation, removeEducation } = useResumeContext();
@@ -58,7 +60,7 @@ const Education: React.FC = () => {
             <p>No education added yet. Click "Add Education" to get started.</p>
           </div>
         ) : (
-          educations.map((education, eduIndex) => (
+          educations.map((education: EducationType) => (
             <div 
               key={education.id} 
               className="border rounded-md p-4 space-y-4 relative"
@@ -180,7 +182,7 @@ const Education: React.FC = () => {
                   Notable Achievements (Optional)
                 </label>
                 
-                {education.highlights.map((highlight, highlightIndex) => (
+                {education.highlights.map((highlight: string, highlightIndex: number) => (
                   <div key={highlightIndex} className="flex items-start gap-2">
                     <TextInput
                       value={highlight}

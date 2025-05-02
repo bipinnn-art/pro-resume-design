@@ -141,7 +141,7 @@ const ClassicGaramondTemplate: React.FC<ClassicGaramondTemplateProps> = ({ data 
                   {(education.startDate || education.endDate) && (
                     <p className="italic text-resume-gray-700">
                       {education.startDate && formatDate(education.startDate)}
-                      {education.endDate && ` - ${formatDate(education.endDate)}`}
+                      {education.endDate && ` - ${formatDate(education.endDate as string)}`}
                     </p>
                   )}
                 </div>
