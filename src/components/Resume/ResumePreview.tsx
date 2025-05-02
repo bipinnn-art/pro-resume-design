@@ -6,6 +6,7 @@ import { Card } from '@/components/UI';
 import SimpleTemplate from './Templates/SimpleTemplate';
 import ModernTemplate from './Templates/ModernTemplate';
 import ProfessionalTemplate from './Templates/ProfessionalTemplate';
+import ClassicGaramondTemplate from './Templates/ClassicGaramondTemplate';
 import html2pdf from 'html2pdf.js';
 import { toast } from 'sonner';
 
@@ -23,12 +24,14 @@ const ResumePreview: React.FC = () => {
         return <ModernTemplate data={resumeData} />;
       case 'professional':
         return <ProfessionalTemplate data={resumeData} />;
+      case 'classic-garamond':
+        return <ClassicGaramondTemplate data={resumeData} />;
       default:
         return <SimpleTemplate data={resumeData} />;
     }
   };
   
-  const handleTemplateChange = (template: 'simple' | 'modern' | 'professional') => {
+  const handleTemplateChange = (template: 'simple' | 'modern' | 'professional' | 'classic-garamond') => {
     setTemplate(template);
     toast.success(`Template changed to ${template}`);
   };
@@ -117,6 +120,14 @@ const ResumePreview: React.FC = () => {
               >
                 Professional
               </Button>
+              <Button
+                variant={resumeData.template === 'classic-garamond' ? 'default' : 'outline'}
+                size="sm"
+                className="w-full justify-start"
+                onClick={() => handleTemplateChange('classic-garamond')}
+              >
+                Classic Garamond
+              </Button>
             </div>
           </div>
           
@@ -158,7 +169,7 @@ const ResumePreview: React.FC = () => {
           <div 
             ref={resumeRef} 
             className={`shadow-lg mx-auto ${
-              viewMode === 'mobile' ? 'scale-[0.6] origin-top transform' : ''
+              viewMode === 'mobile' ? 'scale-[0.6] origin-top transform w-full' : ''
             }`}
           >
             {renderTemplate()}

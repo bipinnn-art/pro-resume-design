@@ -137,10 +137,12 @@ const ExampleResumes = () => {
                   </div>
                   
                   <div className="pt-4 flex flex-wrap gap-3">
-                    <Button variant="premium">
-                      <Eye className="mr-2 h-4 w-4" />
-                      View Full Example
-                    </Button>
+                    <Link to={`/example-resumes/${resume.id}`}>
+                      <Button variant="premium">
+                        <Eye className="mr-2 h-4 w-4" />
+                        View Full Example
+                      </Button>
+                    </Link>
                     <Link to="/builder">
                       <Button variant="outline">
                         <FileText className="mr-2 h-4 w-4" />

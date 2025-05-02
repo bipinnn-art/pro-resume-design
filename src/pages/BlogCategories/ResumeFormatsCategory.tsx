@@ -5,43 +5,44 @@ import BlogCategory from '@/components/Blog/BlogCategory';
 const ResumeFormatsCategory = () => {
   const posts = [
     {
+      id: 'resume-formats-career-changers',
+      title: 'Resume Formats for Career Changers',
+      excerpt: 'Learn how to effectively highlight transferable skills and present your experience when transitioning to a new career path.',
+      image: 'https://images.unsplash.com/photo-1511376777868-611b54f68947?auto=format&fit=crop&q=80&w=800&h=500',
+      author: 'Michael Rodriguez',
+      date: 'April 25, 2025',
+      readTime: '11 min read',
+      category: 'Resume Formats',
+      link: '/resume-formats/career-changers'
+    },
+    {
       id: 'best-resume-formats',
-      title: 'Best Resume Formats for Different Careers',
-      excerpt: 'Find the perfect resume format based on your industry, experience level, and career goals to make the best impression.',
-      image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=800&h=500',
-      author: 'Sarah Williams',
+      title: 'The Best Resume Formats for 2025',
+      excerpt: 'An in-depth comparison of chronological, functional, and hybrid resume formats to help you choose the right one for your situation.',
+      image: 'https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?auto=format&fit=crop&q=80&w=800&h=500',
+      author: 'Jennifer Lee',
+      date: 'April 12, 2025',
+      readTime: '9 min read',
+      category: 'Resume Formats'
+    },
+    {
+      id: 'ats-friendly-resume-formats',
+      title: 'ATS-Friendly Resume Formats That Get Results',
+      excerpt: 'How to structure your resume to ensure it passes through Applicant Tracking Systems while still impressing human recruiters.',
+      image: 'https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&q=80&w=800&h=500',
+      author: 'Robert Chen',
       date: 'April 5, 2025',
-      readTime: '7 min read',
-      category: 'Resume Formats'
-    },
-    {
-      id: 'chronological-vs-functional',
-      title: 'Chronological vs. Functional vs. Combination: Which Resume Format Is Right for You?',
-      excerpt: 'A detailed comparison of the three main resume formats to help you choose the best option for your situation.',
-      image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&q=80&w=800&h=500',
-      author: 'Marcus Johnson',
-      date: 'March 28, 2025',
-      readTime: '6 min read',
-      category: 'Resume Formats'
-    },
-    {
-      id: 'executive-resume-format',
-      title: 'Executive Resume Format: Stand Out at the Leadership Level',
-      excerpt: 'Specialized formatting advice for C-suite executives and senior managers seeking high-level positions.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=800&h=500',
-      author: 'Victoria Chang',
-      date: 'March 20, 2025',
       readTime: '8 min read',
       category: 'Resume Formats'
     },
     {
-      id: 'resume-format-career-change',
-      title: 'Resume Formats for Career Changers',
-      excerpt: 'How to structure your resume when transitioning to a new industry or role to highlight transferable skills.',
-      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800&h=500',
-      author: 'Jason Rodriguez',
-      date: 'March 12, 2025',
-      readTime: '7 min read',
+      id: 'executive-resume-formats',
+      title: 'Executive Resume Formats: Showcasing Leadership and Impact',
+      excerpt: 'Specialized resume formats for executive-level candidates that highlight leadership capabilities and strategic achievements.',
+      image: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800&h=500',
+      author: 'Sarah Johnson',
+      date: 'March 28, 2025',
+      readTime: '10 min read',
       category: 'Resume Formats'
     }
   ];
@@ -49,7 +50,7 @@ const ResumeFormatsCategory = () => {
   return (
     <BlogCategory 
       categoryName="Resume Formats" 
-      categoryDescription="Expert guidance on choosing and implementing the right resume structure for your career situation"
+      categoryDescription="Explore different resume formats and structures to find the best approach for your experience level, industry, and career goals"
       posts={posts}
     />
   );

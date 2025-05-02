@@ -17,7 +17,9 @@ const Preview = () => {
           <Button variant="outline">Back to Editor</Button>
         </Link>
       </div>
-      <ResumePreview />
+      <div className="w-full overflow-x-auto">
+        <ResumePreview />
+      </div>
     </div>
   );
 };
