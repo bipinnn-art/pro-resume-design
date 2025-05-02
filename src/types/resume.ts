@@ -9,7 +9,7 @@ export const WorkExperienceSchema = z.object({
   position: z.string().default(''),
   location: z.string().default(''),
   startDate: z.string().default(''),
-  endDate: z.string().union([z.string(), z.null()]).default(''),
+  endDate: z.union([z.string(), z.null()]).default(''),
   description: z.string().default(''),
   highlights: z.array(z.string()).default(['']),
   isCurrentRole: z.boolean().default(false)
@@ -25,7 +25,7 @@ export const EducationSchema = z.object({
   fieldOfStudy: z.string().default(''),
   location: z.string().default(''),
   startDate: z.string().default(''),
-  endDate: z.string().union([z.string(), z.null()]).default(''),
+  endDate: z.union([z.string(), z.null()]).default(''),
   gpa: z.string().optional(),
   highlights: z.array(z.string()).default(['']),
   isCurrentlyEnrolled: z.boolean().default(false)

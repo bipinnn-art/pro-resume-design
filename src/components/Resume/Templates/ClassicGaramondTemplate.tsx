@@ -9,8 +9,8 @@ interface ClassicGaramondTemplateProps {
 const ClassicGaramondTemplate: React.FC<ClassicGaramondTemplateProps> = ({ data }) => {
   const { contactInfo, workExperiences, educations, skills, languages } = data;
 
-  const formatDate = (dateString: string): string => {
-    if (!dateString || dateString === 'Present') return dateString;
+  const formatDate = (dateString: string | null): string => {
+    if (!dateString || dateString === 'Present') return dateString || '';
     
     try {
       const date = new Date(dateString);
@@ -97,7 +97,7 @@ const ClassicGaramondTemplate: React.FC<ClassicGaramondTemplateProps> = ({ data 
                     <p className="italic">{experience.position}</p>
                   </div>
                   <div className="text-resume-gray-700 italic">
-                    {formatDate(experience.startDate)} - {experience.isCurrentRole ? "Present" : formatDate(experience.endDate as string)}
+                    {formatDate(experience.startDate)} - {experience.isCurrentRole ? "Present" : formatDate(experience.endDate)}
                   </div>
                 </div>
                 
@@ -107,11 +107,12 @@ const ClassicGaramondTemplate: React.FC<ClassicGaramondTemplateProps> = ({ data 
                   </p>
                 )}
                 
-                {experience.highlights.length > 0 && experience.highlights[0] !== '' && (
+                {experience.highlights && experience.highlights.length > 0 && experience.highlights[0] !== '' && (
                   <ul className="list-disc list-outside pl-5 text-resume-gray-800 mt-2 space-y-1">
                     {experience.highlights.map((highlight, index) => (
                       <li key={index} className="ml-1">
-                        <strong>{highlight.split(' ')[0]}</strong> {highlight.split(' ').slice(1).join(' ')}
+                        {highlight.split(' ').length > 0 && <strong>{highlight.split(' ')[0]}</strong>} 
+                        {highlight.split(' ').length > 1 && highlight.split(' ').slice(1).join(' ')}
                       </li>
                     ))}
                   </ul>
@@ -141,12 +142,12 @@ const ClassicGaramondTemplate: React.FC<ClassicGaramondTemplateProps> = ({ data 
                   {(education.startDate || education.endDate) && (
                     <p className="italic text-resume-gray-700">
                       {education.startDate && formatDate(education.startDate)}
-                      {education.endDate && ` - ${formatDate(education.endDate as string)}`}
+                      {education.endDate && ` - ${formatDate(education.endDate)}`}
                     </p>
                   )}
                 </div>
                 
-                {education.highlights.length > 0 && education.highlights[0] !== '' && (
+                {education.highlights && education.highlights.length > 0 && education.highlights[0] !== '' && (
                   <ul className="list-disc list-outside pl-5 text-resume-gray-800 space-y-1 mt-1">
                     {education.highlights.map((highlight, index) => (
                       <li key={index}>{highlight}</li>
