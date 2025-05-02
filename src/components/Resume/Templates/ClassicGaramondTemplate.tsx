@@ -30,7 +30,8 @@ const ClassicGaramondTemplate: React.FC<ClassicGaramondTemplateProps> = ({ data 
         
         <div className="text-base text-resume-gray-700">
           {[
-            contactInfo.city && contactInfo.state ? `${contactInfo.city}, ${contactInfo.state}` : contactInfo.location, 
+            contactInfo.city && contactInfo.state ? `${contactInfo.city}, ${contactInfo.state}` : contactInfo.location,
+            contactInfo.address,
             contactInfo.phone, 
             contactInfo.email
           ]

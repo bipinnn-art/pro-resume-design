@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/UI';
@@ -8,29 +7,29 @@ import { LayoutTemplate, Check } from 'lucide-react';
 const Templates = () => {
   const templates = [
     {
-      id: 'modern',
-      name: 'Modern',
+      id: 'simple',
+      name: 'Simple',
       description: 'Clean, contemporary design with stylish typography and a professional layout.',
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&q=80&w=500&h=650&crop=entropy',
       features: ['ATS-Friendly', 'Professional', 'Modern Layout']
     },
     {
-      id: 'classic',
-      name: 'Classic',
+      id: 'modern',
+      name: 'Modern',
       description: 'Traditional resume format perfect for corporate and established industries.',
       image: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&q=80&w=500&h=650&crop=entropy',
       features: ['Timeless Design', 'ATS-Optimized', 'Highly Readable']
     },
     {
-      id: 'ats-friendly',
-      name: 'ATS-Friendly',
+      id: 'professional',
+      name: 'Professional',
       description: 'Specifically designed to pass through Applicant Tracking Systems with ease.',
       image: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&q=80&w=500&h=650&crop=entropy',
       features: ['Maximum ATS Compatibility', 'Clear Hierarchy', 'Structured Format']
     },
     {
-      id: 'creative',
-      name: 'Creative',
+      id: 'classic-garamond',
+      name: 'Classic Garamond',
       description: 'Stand out with a unique design while maintaining professional readability.',
       image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&q=80&w=500&h=650&crop=entropy',
       features: ['Eye-Catching', 'Industry-Specific', 'Still ATS-Compatible']

@@ -94,10 +94,10 @@
     background-color: white;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     position: relative;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Inter', sans-serif;
   }
 
-  .garamond-resume {
+  .font-garamond {
     font-family: 'EB Garamond', serif;
   }
   

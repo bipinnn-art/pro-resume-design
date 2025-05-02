@@ -1,13 +1,14 @@
 
 import React from 'react';
-import { TextInput, TextArea, Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/UI';
+import { TextInput, TextArea, Card, CardHeader, CardTitle, CardDescription, CardContent, Select } from '@/components/UI';
 import { useResumeContext } from '@/context/ResumeContext';
+import { countries } from '@/data/countries';
 
 const PersonalInfo: React.FC = () => {
   const { resumeData, updateContactInfo } = useResumeContext();
   const { contactInfo } = resumeData;
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     updateContactInfo({
       [e.target.name]: e.target.value
     });
@@ -93,12 +94,15 @@ const PersonalInfo: React.FC = () => {
             onChange={handleChange}
             placeholder="10001"
           />
-          <TextInput
+          <Select
             label="Country (Optional)"
             name="country"
             value={contactInfo.country || ''}
             onChange={handleChange}
-            placeholder="USA"
+            options={[
+              { value: '', label: 'Select country' },
+              ...countries.map(country => ({ value: country, label: country }))
+            ]}
           />
         </div>
         
